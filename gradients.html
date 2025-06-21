@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplo de background con linear-gradient</title>
+<style>
+  .element {
+    color: white;               /* Color de texto */
+    padding: 20px;              /* Añade espacio alrededor del contenido */
+    margin-bottom: 20px;        /* Añade espacio entre elementos */
+  }
+
+  /* Estilo básico */
+  .element:first-child {
+    background: linear-gradient(to right, black, blue, gold, green, red); /* Básico, con colores con distancias equilibradas */
+  }
+
+  /* Equivalente al estilo básico pero con porcentajes */
+  .element:last-child {
+    background:
+      linear-gradient(
+        to right,
+        black 0%,     /* Color 100% negro en el punto 0% y comienza a cambiar */
+        blue 25%,     /* Color 100% azul en el punto 25% y comienza a cambiar */
+        gold 50%,     /* Color 100% dorado en el punto 50% y comienza a cambiar */
+        green 75%,    /* Color 100% verde en el punto 75% y comienza a cambiar */
+        red 100%      /* Color 100% rojo en el punto 100% */
+      );
+  }
+</style>
+</head>
+<body>
+
+<div class="element">
+  <h1>Ejemplo básico</h1>
+  <p>Este es un ejemplo de un gradiente lineal con colores equilibrados utilizando la propiedad background en CSS.</p>
+</div>
+
+<div class="element">
+  <h1>Equivalente con porcentajes</h1>
+  <p>Este es un ejemplo equivalente al anterior, pero definido con porcentajes en el gradiente lineal.</p>
+</div>
+
+</body>
+</html>

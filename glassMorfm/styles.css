@@ -1,0 +1,139 @@
+html {
+
+    font-size:  100%; /* 1 rem == 16px */
+
+}
+
+* {
+
+    margin:  0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: sans-serif;
+    
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://i.pinimg.com/736x/84/56/ed/8456ed58dc9eafbcd4206931b5cae3d2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.wrapper {
+
+    margin-top: 2.5rem;
+    width:  26.25rem;
+    background-color: transparent;
+    border: 4px solid green;
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    box-shadow: 0 0 0 0.125rem;
+    border-radius: 16px;
+    color: darkgreen;
+
+}
+
+.wrapper h1  {
+
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.wrapper .input-box {
+
+    width: 100%;
+    height: 2.4rem;
+    position: relative;
+    margin: 1.08rem 0;
+
+}
+
+.input-box input {
+
+    border-radius: 8px;
+    height: 94%;
+    width: 84%;
+    border: 2px solid green;
+    color:  black;
+    outline: auto;
+    padding-left: 8px;
+    
+}
+
+.input-box input::placeholder {
+
+    color: green;
+
+}
+
+.input-box i {
+
+    font-size:  1.5rem;
+
+} 
+
+.wrapper .remember-password {
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.94rem;
+    margin-bottom: 1rem;
+
+}
+
+.remember-password label input {
+
+    accent-color: green ;
+    margin-right: 0.25rem;
+
+}
+
+.remember-password a {
+
+    color:  darkgreen;
+    
+}
+
+.wrapper .sign-in-btn  {
+
+    width: 100%;
+    height: 2.6rem;
+    background-color: green;
+    border: 2px solid lightgreen;
+    border-radius: 1.6rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.wrapper .sign-in-btn:hover {
+
+    box-shadow: 0 0 1.5rem lightgreen;
+
+}
+
+.wrapper .register-link {
+
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.94rem;
+    margin : 1.25rem;
+
+}
+
+.wrapper .register-link p a {
+
+    color:  darkgreen ;
+}
